@@ -24,6 +24,19 @@ li a {
   list-style: none;
   text-decoration: none;
 }
+
+h1{
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  border-bottom: 2px thin;
+  border-color: white;
+}
+ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
 .wrapper {
   display: flex;
   position: relative;
