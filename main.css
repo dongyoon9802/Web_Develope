@@ -25,35 +25,61 @@ li a {
   text-decoration: none;
 }
 
-h1{
+h1 {
   text-align: center;
   font-size: 30px;
   margin: 0;
-  border-bottom: 2px thin;
-  border-color: white;
 }
-ul li a{
+ul li a {
   text-decoration: none;
   color: white;
   font-size: 20px;
 }
-.wrapper {
-  display: flex;
-  position: relative;
-}
 
-.wrapper .sidebar {
-  position: fixed;
-  width: 300px;
-  height: 100%;
-  background-color: #2f4f4f;
+.sidebar {
+  background-color: #252525;
   padding: 30px;
+  height: 100%;
+  grid-column: 1;
+  grid-row: 1/3;
+  justify-items: stretch;
+  align-items: stretch;
+  border-radius: 0px 20px 20px 0px / 0px 20px 20px 0px;
 }
 
-.wrapper .sidebar h1 {
+.sidebar h1 {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
   border-bottom-width: 5px;
+}
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1080px 2fr;
+  grid-template-rows: 610px 1fr;
+  grid-gap: 5px;
+}
+.chart-view {
+  grid-column: 2;
+  grid-row: 1;
+  justify-items: stretch;
+  align-items: stretch;
+}
+.setting {
+  background-color: #252525;
+  grid-column: 3;
+  grid-row: 1;
+  justify-items: stretch;
+  align-items: stretch;
+  border-radius: 0px 0px 0px 20px / 0px 0px 0px 20px;
+}
+.performance {
+  grid-column: 2/4;
+  grid-row: 2;
+  background-color: #252525;
+  justify-items: stretch;
+  align-items: stretch;
+  border-radius: 20px 0px 0px 0px / 20px 0px 0px 0px;
 }
