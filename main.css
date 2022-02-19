@@ -37,7 +37,7 @@ ul li a {
 }
 
 .sidebar {
-  background-color: #252525;
+  background-color: #161a25;
   padding: 30px;
   height: 100%;
   grid-column: 1;
@@ -68,7 +68,7 @@ ul li a {
   align-items: stretch;
 }
 .setting {
-  background-color: #252525;
+  background-color: #161a25;
   grid-column: 3;
   grid-row: 1;
   justify-items: stretch;
@@ -78,8 +78,12 @@ ul li a {
 .performance {
   grid-column: 2/4;
   grid-row: 2;
-  background-color: #252525;
+  background-color: #161a25;
   justify-items: stretch;
   align-items: stretch;
   border-radius: 20px 0px 0px 0px / 20px 0px 0px 0px;
+}
+.menu-subtitle {
+  color: #fff;
+  font-size: 15px;
 }
