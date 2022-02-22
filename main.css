@@ -49,6 +49,9 @@ ul li a {
   align-items: stretch;
 }
 .setting {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   background-color: #161a25;
   grid-column: 3;
   grid-row: 1;
@@ -56,6 +59,7 @@ ul li a {
   align-items: stretch;
   /* border-radius: 0px 0px 0px 10px / 0px 0px 0px 10px; */
 }
+
 .performance {
   grid-column: 2/4;
   grid-row: 2;

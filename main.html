@@ -46,55 +46,61 @@
                 <!-- TradingView Widget END -->
             </section>
             <section class="setting">
-                <div>
-                    <p class="menu-subtitle">거래소</p>
-                    <select name="exchange" id="exchange-select">
-                        <option value=""><<---선택하시오--->></option>
-                        <option value="binance">Binance</option>
-                        <option value="bybit">Bybit</option>
-                        <option value="bitget">Bitget</option>
-                        <option value="upbit">Upbit</option>
-                        <option value="bitthum">Bitthum</option>
-                    </select>
+                <div class="setting-row1">
+                    <div>
+                        <p class="menu-subtitle">거래소</p>
+                        <select name="exchange" id="exchange-select">
+                            <option value=""><<---선택하시오--->></option>
+                            <option value="binance">Binance</option>
+                            <option value="bybit">Bybit</option>
+                            <option value="bitget">Bitget</option>
+                            <option value="upbit">Upbit</option>
+                            <option value="bitthum">Bitthum</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="menu-subtitle">코인</p>
+                        <select name="symbol" id="symbol-select">
+                            <option value=""><<---선택하시오--->></option>
+                            <option value="btcusdt">BTCUSDT</option>
+                            <option value="ethusdt">ETHUSDT</option>
+                            <option value="solusdt">SOLUSDT</option>
+                            <option value="xrpusdt">XRPUSDT</option>
+                            <option value="lunausdt">LUNAUSDT</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
-                    <p class="menu-subtitle">코인</p>
-                    <select name="symbol" id="symbol-select">
-                        <option value=""><<---선택하시오--->></option>
-                        <option value="btcusdt">BTCUSDT</option>
-                        <option value="ethusdt">ETHUSDT</option>
-                        <option value="solusdt">SOLUSDT</option>
-                        <option value="xrpusdt">XRPUSDT</option>
-                        <option value="lunausdt">LUNAUSDT</option>
-                    </select>
+                <div class="setting-row2">
+                    <div>
+                        <p class="menu-subtitle">현물선물</p>
+                        <input type="radio" id="spot" name="rr" />
+                        <label for="spot" class="menu-subtitle"><span></span>SPOT</label>
+                        <input type="radio" id="futures" name="rr" />
+                        <label for="futures" class="menu-subtitle"><span></span>FUTURES</label>
+                    </div>
+                    <div>
+                        <p class="menu-subtitle">주문방식</p>
+                        <input type="radio" id="market-price" name="order-way" />
+                        <label for="market-price" class="menu-subtitle"><span></span>시장가</label>
+                        <input type="radio" id="pending-price" name="order-way" />
+                        <label for="pending-price" class="menu-subtitle"><span></span>지정가</label>
+                    </div>
                 </div>
-                <div>
-                    <p class="menu-subtitle">현물선물</p>
-                    <input type="radio" id="spot" name="rr" />
-                    <label for="spot" class="menu-subtitle"><span></span>SPOT</label>
-                    <input type="radio" id="futures" name="rr" />
-                    <label for="futures" class="menu-subtitle"><span></span>FUTURES</label>
+                <div class="setting-row3">
+                    <div>
+                        <label class="menu-subtitle">익절%</label>
+                        <input type="number" id="stoplimit" name="stoplimit" min="0.01" max="10000" step="0.01"><br>
+                        <label class="menu-subtitle">손절%</label>
+                        <input type="number" id="losscut" name="losscut" min="0.01" max="10000" step="0.01">
+                    </div>
                 </div>
-                <div>
-                    <p class="menu-subtitle">주문방식</p>
-                    <input type="radio" id="market-price" name="order-way" />
-                    <label for="market-price" class="menu-subtitle"><span></span>시장가</label>
-                    <input type="radio" id="pending-price" name="order-way" />
-                    <label for="pending-price" class="menu-subtitle"><span></span>지정가</label>
-                </div>
-                <div>
-                    <label class="menu-subtitle">익절%</label>
-                    <input type="number" id="stoplimit" name="stoplimit" min="0.01" max="10000" step="0.01">
-                    <p></p>
-                    <label class="menu-subtitle">손절%</label>
-                    <input type="number" id="losscut" name="losscut" min="0.01" max="10000" step="0.01">
-                </div>
-                <div>
-                    <label class="menu-subtitle">주문비중%</label>
-                    <input type="number" id="order" name="order" min="0.01" max="100" step="0.01">
-                    <p></p>
-                    <label class="menu-subtitle">레버리지</label>
-                    <input type="number" id="leverage" name="leverage" min="1" max="125" step="1">
+                <div class="setting-row4">
+                    <div>
+                        <label class="menu-subtitle">주문비중%</label>
+                        <input type="number" id="order" name="order" min="0.01" max="100" step="0.01"><br>
+                        <label class="menu-subtitle">레버리지</label>
+                        <input type="number" id="leverage" name="leverage" min="1" max="125" step="1">
+                    </div>
                 </div>
                 
             </section>
