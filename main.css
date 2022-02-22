@@ -50,11 +50,7 @@ ul li a {
 }
 .setting {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   background-color: #161a25;
-  grid-column: 3;
-  grid-row: 1;
   justify-items: stretch;
   align-items: stretch;
   /* border-radius: 0px 0px 0px 10px / 0px 0px 0px 10px; */
@@ -71,4 +67,40 @@ ul li a {
 .menu-subtitle {
   color: #fff;
   font-size: 15px;
+}
+
+.setting-list{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+}
+.select-exchange{
+  justify-items: stretch;
+  align-items: stretch;
+  grid-column: 1;
+  grid-row: 1;
+}
+.select-crypto{
+  justify-items: stretch;
+  align-items: stretch;
+  grid-column: 1;
+  grid-row: 2;
+}
+.select-product{
+  justify-items: stretch;
+  align-items: stretch;
+  grid-column: 2;
+  grid-row: 1;
+}
+.select-orderway{
+  justify-items: stretch;
+  align-items: stretch;
+  grid-column: 2;
+  grid-row: 2;
+}
+.stop-loss-limit{
+  justify-items: stretch;
+  align-items: stretch;
+  grid-column: 3;
+  grid-row: 1;
 }
