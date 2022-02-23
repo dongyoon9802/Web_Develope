@@ -88,3 +88,35 @@ ul li a {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.performance-list{
+  color: #fff;
+  font-size: 20px;
+}
+.position{
+  display: flex;
+}
+.long-or-short{
+  flex-grow: 1fr;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.entryprice{
+  flex-grow: 1fr;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.amount{
+  flex-grow: 1fr;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.entry-time{
+  flex-grow: 1fr;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.income{
+  flex-grow: 1fr;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
