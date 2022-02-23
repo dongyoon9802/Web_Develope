@@ -5,6 +5,9 @@
   list-style: none;
   text-decoration: none;
 }
+body {
+  background-color: #696969;
+}
 
 h1 {
   text-align: center;
@@ -40,7 +43,7 @@ ul li a {
   display: grid;
   grid-template-columns: 1fr 1080px 2fr;
   grid-template-rows: 610px 1fr;
-  grid-gap: 2px;
+  grid-gap: 1px;
 }
 .chart-view {
   grid-column: 2;
@@ -69,7 +72,7 @@ ul li a {
 }
 
 .setting-list {
-  margin: 30px;
+  border: 30px;
   padding: 10px;
   background-color: #696969;
 }
@@ -88,35 +91,32 @@ ul li a {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.performance-list{
+.performance-list {
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
+  margin-right: 70px;
 }
-.position{
+.position {
   display: flex;
+  border-bottom: 1px solid;
+  padding: 10px;
+  border-color: #696969;
 }
-.long-or-short{
+.long-or-short {
   flex-grow: 1fr;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
 }
-.entryprice{
+.entryprice {
   flex-grow: 1fr;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
 }
-.amount{
+.amount {
   flex-grow: 1fr;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
 }
-.entry-time{
+.entry-time {
   flex-grow: 1fr;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
 }
-.income{
+.income {
   flex-grow: 1fr;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+}
+.entry-symbol {
+  flex-grow: 1fr;
 }
